@@ -9,9 +9,9 @@ public class Ex1_operator {
        
         
         Ex1_operator p = new Ex1_operator();
-        // p.practice1(sc);
-        // p.practice2(sc);
-        // p.practice3(sc);
+        p.practice1(sc);
+        p.practice2(sc);
+        p.practice3(sc);
         // p.practice4(sc);
         // p.practice5(sc);
         // p.practice6(sc);
@@ -19,12 +19,13 @@ public class Ex1_operator {
         // p.practice8(sc);
         // p.practice9(sc);
         // p.practice10(sc);
-        p.practice11(sc);
-        sc.close();
+        // p.practice11(sc);
+        // sc.close();
     }//main메서드
            
  
    public void practice1(Scanner sc){
+    // Scanner sc= new Scanner(System.in);
     /*
             메소드 명 : public void practice1(){}
         키보드로 입력 받은 하나의 정수가 양수이면 “양수다“, 양수가 아니면 “양수가 아니다“를 출력하세요.
@@ -40,7 +41,7 @@ public class Ex1_operator {
     }else{
         System.out.println("양수가 아니다");
     }
- 
+  
    }//practice1 클래스
 
 //    메소드 명 : public void practice2(){}
@@ -50,7 +51,7 @@ public class Ex1_operator {
 // 정수 : -9
 // 음수다
    public void practice2(Scanner sc){
-
+    // Scanner sc= new Scanner(System.in);
     System.out.print("정수: ");
     int a = sc.nextInt();
     
@@ -62,12 +63,12 @@ public class Ex1_operator {
     }else{
         System.out.println("음수다");
     }
-  
+    
 
    }//practice2 클래스
 
    public void practice3(Scanner sc){
-
+    // Scanner sc= new Scanner(System.in);
     System.out.print("정수: ");
     int a =sc.nextInt();
 
@@ -77,7 +78,7 @@ public class Ex1_operator {
         System.out.println("홀수다");
     }
 
-
+    sc.close();
    }//practice3 클래스
 
    public void practice4(Scanner sc){
