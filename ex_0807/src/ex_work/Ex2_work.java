@@ -27,10 +27,11 @@ public class Ex2_work {
         if(n>9 || n<2){
             System.out.print("2~9 사이의 값을 입력하세요.");
         }else{
-            for(int i=1;i<9;i++){
-                System.out.print(n+"*"+i+"="+n*i);
-             }
-        }
+            for(int i=1;i<10;i++){
+                // System.out.println(n+"*"+i+"="+n*i);
+                System.out.printf("%d * %d= %02d\n",n,i,(n*i));
+             }//for
+        }//if문
         
     }
 }

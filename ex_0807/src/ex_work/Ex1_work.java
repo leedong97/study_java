@@ -23,7 +23,9 @@ public class Ex1_work {
        System.out.print("년도 : ");
        int year = sc.nextInt();
 
-       if(year%4==0 && year%100!=0 || year%400 ==0){
+       boolean res= year%4==0 && year%100!=0 || year%400 ==0;
+       if(res){ // if 문의 경우 res == true를 res로 줄일수있다. 
+                // if 문의 경우 res == false를 !res로 줄일수있다.
         System.out.print(year+"년은 윤년입니다.");
 
        }else{
