@@ -10,7 +10,8 @@ public class Ex1_if {
     // p.practice1(sc);
     // p.practice2(sc);
     // p.practice3(sc);
-    p.practice4(sc);
+    // p.practice4(sc);
+    p.practice5(sc);
     }//main
     
     public void practice1(Scanner sc){
@@ -142,4 +143,25 @@ public class Ex1_if {
         break;
     }
     }//pr4
+
+    public void practice5(Scanner sc){
+        String id1="myId";
+        String pw1="myPassword12";
+        System.out.print("아이디: ");
+        String id2= sc.next();
+
+        System.out.print("비밀번호: ");
+        String pw2 = sc.next();
+        
+        if(id1==id2 && pw1==pw2){
+            System.out.println("로그인 성공");
+        }else if(id1 != id2&& pw1== pw2){
+            System.out.println("아이디가 틀렸습니다.");
+        }else if(id1 == id2 && pw1!=pw2){
+            System.out.println("비밀번호가 틀렸습니다.");
+        }
+
+        
+    }//pr5
+    
 }
