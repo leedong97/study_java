@@ -1,5 +1,7 @@
 package ex_work;
 
+import java.util.Random;
+
 public class Ex09_work {
    public static void main(String[] args) {
         //1~ 6 사이의 중복되지 않는 난수 6개를 출력하는
@@ -9,12 +11,23 @@ public class Ex09_work {
         // --------------------
         // 17 2 45 27 9 11
 
+        Random random = new Random();
 
-
-        int[] lotto = new int[6];
-
-
-
-
-   }//main 
+        int[] lotto = new int[45];
+        
+      out :for(int i =0; i< 45; i++){
+         int a= random.nextInt(45)+1;
+         for(int j=0; j<i; j++){
+            if(a==lotto[j]){
+               i--;
+               continue out;
+            }
+         }
+         lotto[i]=a;
+         
+      }
+      for(int i =0; i<6;i++){
+         System.out.print(lotto[i]+" ");
+      }     
+   }
 }
