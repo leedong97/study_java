@@ -13,6 +13,8 @@ public class Ex6_work {
 
         Scanner sc = new Scanner(System.in);
         System.out.print("입력: ");
+
+        
         int a = sc.nextInt();
         int num1 =1;
         int num2= 1;
@@ -23,8 +25,7 @@ public class Ex6_work {
             System.out.print(num1+ " ");
             int num = num1;
             num1= num2;
-            num2= num+ num2;
-            
+            num2= num+ num2;           
             
         }
 
