@@ -7,35 +7,82 @@ public class Ex07_work {
         // ---------------------------
         // 11 7 9 20 15 3 
         // 3 7 9 11 15 20
-        int[] arr= {11,7,9,20,15,3};
-        int up= 0;
-        int down= 0;
-        // 내림차순 코드
-        for(int i = 0; i <6; i++){
-            for(int j = i; j<6; j++){
-                if(arr[i] < arr[j]){
-                    down = arr[i];
-                    arr[i]= arr[j];
-                    arr[j]= down;                  
-                }// if
-            }//inner for
-            System.out.print(arr[i]+" ");
-        }//outer for
 
-        System.out.println();
-        // 오름차순 코드
-        for(int i= 0; i<6; i++){
-            for(int j = i; j<6; j++){
-                if(arr[i]> arr[j]){
-                    
-                    up = arr[i];
-                    arr[i]= arr[j];
-                    arr[j]= up;
-                    
-                }//if
-            }//for inner
+        int [] arr = {11,7,9,20};
+
+        System.out.print("원본배열: ");
+        for(int i =0; i<arr.length; i++){
             System.out.print(arr[i]+" ");
-        }//for outer 
+        }//for
+
+        System.out.print("\n오름차순 :");
+
+        // arr을 오름차순으로 정렬
+        for(int i= 0; i<arr.length; i++){
+
+            for(int j = i; j<arr.length; j++){
+
+                if( arr[j] < arr[i]){
+                    int tmp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j]= tmp;
+                }
+
+
+            }//inner
+        }//outer
+        for (int i =0; i< arr.length; i++){
+            System.out.print(arr[i]+ " ");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // int[] arr= {11,7,9,20,15,3};
+        // int up= 0;
+        // int down= 0;
+        // // 내림차순 코드
+        // for(int i = 0; i <6; i++){
+        //     for(int j = i; j<6; j++){
+        //         if(arr[i] < arr[j]){
+        //             down = arr[i];
+        //             arr[i]= arr[j];
+        //             arr[j]= down;                  
+        //         }// if
+        //     }//inner for
+        //     System.out.print(arr[i]+" ");
+        // }//outer for
+
+        // System.out.println();
+        // // 오름차순 코드
+        // for(int i= 0; i<6; i++){
+        //     for(int j = i; j<6; j++){
+        //         if(arr[i]> arr[j]){
+                    
+        //             up = arr[i];
+        //             arr[i]= arr[j];
+        //             arr[j]= up;
+                    
+        //         }//if
+        //     }//for inner
+        //     System.out.print(arr[i]+" ");
+        // }//for outer 
 
 
 

@@ -13,26 +13,54 @@ public class Ex08_work {
         // 500원 : 5
         // 50원 : 1
         // 10원 : 4
+
+
+
+
+
+
         Random random = new Random();
         int[] coin = {500, 100, 50, 10};
-        int num = random.nextInt(4990)+10;
+
+        int money = new Random().nextInt(500)+1;
+        money *=10;
+
+        System.out.println("금액: "+ money);
+
+        for(int i =0; i<coin.length; i++){
+
+            int res = money / coin[i];
+            if(res >0){
+                System.out.printf("%d원 : %d개\n",coin[i], res);
+                money %= coin[i];
+            }
+
+        }//for
+
+
+
+
+
+
+
+        // int num = random.nextInt(4990)+10;
         
         
-        int a =0;
-        //500원짜리
-        int b= 0;
-        // 100원짜리
-        int c= 0;
-        // 10원짜리
-        if(num%10==0){
-           a= num/coin[0];
-           b= (num-a*500)/coin[1];
-           c= (num-a*500-b*100)/coin[3];
-        }
-        System.out.println("금액: "+num);
-        System.out.println("500원: "+a);
-        System.out.println("100원: "+b);
-        System.out.println("10원: "+c);
+        // int a =0;
+        // //500원짜리
+        // int b= 0;
+        // // 100원짜리
+        // int c= 0;
+        // // 10원짜리
+        // if(num%10==0){
+        //    a= num/coin[0];
+        //    b= (num-a*500)/coin[1];
+        //    c= (num-a*500-b*100)/coin[3];
+        // }
+        // System.out.println("금액: "+num);
+        // System.out.println("500원: "+a);
+        // System.out.println("100원: "+b);
+        // System.out.println("10원: "+c);
      
 
     }//main

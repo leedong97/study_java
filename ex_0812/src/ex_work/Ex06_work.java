@@ -21,7 +21,8 @@ public class Ex06_work {
         //6
         // 가장 많이 등장한 숫자 : 2
         // 등장 횟수 :4
-        Scanner sc = new Scanner(System.in);
+       
+        // Scanner sc = new Scanner(System.in);
         System.out.println("정수: ");
 
         int[] arr = new int[10];
