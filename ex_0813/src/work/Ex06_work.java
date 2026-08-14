@@ -21,35 +21,35 @@ public class Ex06_work {
          * 이동협 99 100 75
          * 김길순 70 89 99
          */
-        // Scanner sc =new Scanner(System.in);
-        // System.out.print("등록할 인원수 : ");
-        // int n = sc.nextInt();
+        Scanner sc =new Scanner(System.in);
+        System.out.print("등록할 인원수 : ");
+        int n = sc.nextInt();
 
-        // String[] info= {"이름: ","수학: ","영어: "};
+        String[] info= {"이름: ","수학: ","영어: "};
 
-        // String [][] str = new String[n][info.length];
+        String [][] str = new String[n][info.length];
 
-        // // 학생정보 등록
-        // for(int i=0; i<str.length; i++){
-        // for(int j =0; j<str[i].length; j++){
+        // 학생정보 등록
+        for(int i=0; i<str.length; i++){
+        for(int j =0; j<str[i].length; j++){
 
-        // System.out.print(info[j]);
-        // str[i][j] = sc.next();
-        // }
-        // }
-        // System.out.printf("총 %d명의 정보가 등록됨\n", n);
-        // System.out.println("[학생 등록 정보]");
+        System.out.print(info[j]);
+        str[i][j] = sc.next();
+        }
+        }
+        System.out.printf("총 %d명의 정보가 등록됨\n", n);
+        System.out.println("[학생 등록 정보]");
 
-        // for(int i =0; i <str.length; i++){
+        for(int i =0; i <str.length; i++){
 
-        // for(int j =0; j<str[i].length; j++){
-        // System.out.printf("%s\t",str[i][j] );
+        for(int j =0; j<str[i].length; j++){
+        System.out.printf("%s\t",str[i][j] );
 
-        // }//inner
+        }//inner
 
-        // System.out.println();
+        System.out.println();
 
-        // }//outer
+        }//outer
 
         // Scanner sc = new Scanner(System.in);
         // System.out.print("등록할 인원수 :");

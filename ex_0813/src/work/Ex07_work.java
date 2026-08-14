@@ -9,31 +9,54 @@ public class Ex07_work {
         // 08 01 06
         // 03 05 07
         // 04 09 02
-        Scanner sc = new Scanner(System.in);
-        System.out.print("홀수: ");
-        int a = sc.nextInt();
-        int[][] arr = new int[a][a];
-        arr[0][a / 2] = 1;
-        int num1 = 0;
-        int num2 = 0;
-        for (int i = 0; i < a; i++) {
-            for (int j = 0; j < a; j++) {
-                num2 += arr[i][j];
-            }
-            num1 += arr[0][i];
+       Scanner sc = new Scanner(System.in);
 
+       System.out.print("홀수: ");
+       int size = sc.nextInt();
+       int[][] square = new int[size][size];
+       int num = 1;
+       int y=0; //y축(행)
+       int x= 0; //x축(열)
+
+       x = size /2;
+
+       while(num <= size*size){
+
+            square[y][x]= num;
+
+        if( num % size ==0){
+            y++;
+        }else{
+            y--;
+            x++;
         }
+        if(y<0)
+            y= size-1;
+        if( x>=size )
+            x=0;
+        num++;
+       }//while
 
-        if (num1 == num2) {
 
-            for (int i = 0; i < a; i++) {
-                for (int j = 0; j < a; j++) {
-                    System.out.print(arr[i][j]);
-                }
-                System.out.println();
-            }
+     
 
-        }
+       //배열에 담긴 모든 값을 출력
+       for(int i = 0; i<size; i++){
+            for(int j =0; j<size; j++){
+
+                System.out.printf("%02d ", square[i][j]);
+
+
+            }//inner
+            System.out.println();
+       }//outer
+
+
+
+
+
+
+
 
     } // main
 }
