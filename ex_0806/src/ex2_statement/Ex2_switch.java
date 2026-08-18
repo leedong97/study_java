@@ -10,7 +10,7 @@ public class Ex2_switch {
 
         case "A": // 비교값과 조건값을 맞추기 위해서 case도 String 즉 문자열로 만들어준거다.
             res= "90~100";
-            break; // break를 실수로 안적으면 break가 나올떄까지 쭉 내라겨고
+            break; // break를 실수로 안적으면 break가 나올떄까지 쭉 내려가고
                     // 이번 경우에는 case"B"의 값인 80~89가 나온다.
         case "B":
             res="80~89";
