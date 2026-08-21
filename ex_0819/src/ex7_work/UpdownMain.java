@@ -34,14 +34,15 @@ public class UpdownMain {
        
        //int res=sub2.result2(random,num1,count);
         int res = 0;
-        int num1=0;
+        
+
        while(res!=2){
         System.out.print("정수: ");
-        num1 =sc.nextInt();
+       int num1 =sc.nextInt();
         res=sub2.result2(random,num1,count);
         count++;
        }
-        System.out.println(num1);
+       
         
     }//main
 }
