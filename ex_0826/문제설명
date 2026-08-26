@@ -1,0 +1,24 @@
+
+
+
+
+
+        // 3초마다 새로운 배열에 data의 값중에 1개를 랜덤으로 추가된다.
+            (별개로 계속 도는중)
+        // 생성된 값을 타이핑하면 맞게 치면 1개씩 줄어든다
+        // 배열의 값이 없으면 clear 라고 뜬다.
+        /*
+         * [strawberry]
+         * >> strawberry
+         * [orange, grape, apple]
+         * >> orange
+         * [grape, apple]
+         * >> grape
+         * [apple, apple]
+         * >> apple
+         * [apple]
+         * >> apple
+         * [strawberry]
+         * >> strawberry
+         * 클리어!!!
+         */
