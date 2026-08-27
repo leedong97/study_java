@@ -39,10 +39,6 @@ public class Ex1_work {
                 }
             }            
         }
-        //이게 선생님 코드 이게 훨씬더 좋아보이네
-        //if(list2.contains(num) && !common.contains(num)){
-        //          common.add(num);         
-        // }
         System.out.println(list3);
 
         // 중복된값을 빼고 하는거보다 없는것을 정렬하는게 더편하다는 알고리즘이용
